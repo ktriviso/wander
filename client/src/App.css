@@ -1,0 +1,343 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.button {
+  border: none;
+  background: #65a9d7;
+  padding: 10px 15px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: white;
+  font-size: 2vh;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 200px;
+}
+
+header {
+  width: 100vw;
+  height: 15vh;
+  border: 2px solid rgba(0,0,0,.2);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+header .button {
+  margin-top: 1rem!important;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+
+header div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url('./images/wander.png');
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 2rem;
+}
+
+header li {
+  list-style: none;
+  margin: 2rem;
+}
+
+#blog div:first-of-type{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.post {
+  height: 40vh;
+  width: 25vw;
+  margin: 1%;
+  position: relative;
+}
+
+.post h3 {
+  background-color: white;
+  height: max-content;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 1rem;
+  font-size: 2vh;
+}
+
+.post:first-of-type {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url('./images/truck.jpg');
+}
+
+.post:last-of-type {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('./images/food.jpg');
+}
+
+#customers-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.testimonial {
+  height: 50vh;
+  width: 50vh;
+  margin: 3%;
+  margin-top: 0;
+  padding: 3%;
+}
+
+.testimonial div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 60%;
+  width: 60%;
+  margin: auto;
+}
+
+.locals-blurb {
+  height: 40vh;
+  width: 40vh;
+  margin: 3%;
+  margin-top: 0;
+  text-align: left;
+}
+
+.locals-blurb div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 60%;
+  width: 60%;
+  margin: auto;
+  padding: 3%;
+}
+
+.locals-blurb i {
+  padding: .2rem;
+}
+
+.locals-blurb h1, .locals-blurb h2, .locals-blurb h3, .locals-blurbs span, .locals-blurb p {
+  margin: auto;
+  padding-left: 20%;
+  font-weight: lighter;
+}
+
+.locals-blurb p:first-of-type {
+  padding-top: 5%;
+}
+
+.locals-blurb h3, .locals-blurb p {
+  font-size: 1.5vh;
+}
+
+.locals-blurb h2 {
+  font-size: 2vh;
+}
+
+.locals-blurb h1 {
+  font-size: 2.5vh;
+}
+
+.one div {
+  background-image: url('./images/customer1.jpg');
+}
+
+.two div {
+  background-image: url('./images/customer2.jpg');
+}
+
+.three div {
+  background-image: url('./images/customer3.jpg');
+}
+
+.four div {
+  background-image: url('./images/local1.jpg');
+}
+
+.five div {
+  background-image: url('./images/local2.jpg');
+}
+
+.six div {
+  background-image: url('./images/local3.jpg');
+}
+
+.testimonial span {
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 2vh;
+}
+
+#locals-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.profile-blurb {
+  height: 30vh;
+  width: 30vh;
+  border: 1px solid black;
+  margin: 3%;
+}
+
+.title {
+  padding-top: 3rem;
+  font-size: 3vh;
+}
+
+#about li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+}
+
+#about h1 {
+  font-size: 2.5vh;
+  margin: 0;
+}
+
+#about div {
+  background-image: url('./images/travel.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100vw;
+  border-left: 5rem solid white;
+  border-right: 5rem solid white;
+}
+
+#destination {
+  width: 100%;
+}
+
+#destination div {
+  background-image: url('./images/beach.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100vw;
+  border-left: 5rem solid white;
+  border-right: 5rem solid white;
+}
+
+#destination button {
+  margin: 2rem;
+}
+
+#carousel {
+  background-image: url('./images/mountain.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 2rem;
+  border-left: 5rem solid white;
+  border-right: 5rem solid white;
+  width: 100vw;
+  height: 60vh;
+  margin-top: 25vh;
+}
+
+#carousel h1 {
+  font-size: 4vh;
+  padding: 6rem;
+}
+
+footer {
+  background-color: rgb(90,159,209);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20vh;
+  width: 100vw;
+  color: white;
+}
+
+footer div {
+  margin: 1rem;
+}
+
+footer li {
+  display: inline;
+  list-style: none;
+  padding: .5rem;
+  font-size: 3vh;
+}
+
+footer h1 {
+  font-size: 2.5vh;
+}
+
+footer button, footer input {
+  border: none;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5vh;
+}
+
+footer button {
+  width: 100px;
+}
+
+footer input {
+  border-right: 1px solid black;
+  width: 300px;
+}
+
+#search-bar button {
+  display: block;
+  margin: auto;
+}
+
+#search-bar {
+  height: 30vh;
+  border: 1px solid black;
+}
+
+#search-bar input {
+  width: 280px;
+  padding: .5rem;
+  font-size: 1.5vh;
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  box-shadow: 2px 4px rgba(0,0,0,.3);
+}
